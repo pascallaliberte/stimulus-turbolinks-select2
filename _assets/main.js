@@ -1,4 +1,4 @@
-// import Turbolinks from 'turbolinks'
+import Turbolinks from 'turbolinks'
 // import { Application } from "stimulus"
 // import { autoload } from "stimulus/webpack-helpers"
 // 
@@ -6,7 +6,7 @@
 // const controllers = require.context("./controllers", true, /\.js$/)
 // autoload(controllers, application)
 // 
-// Turbolinks.start()
+Turbolinks.start()
 
 $(document).ready(function() {
   $('[data-behavior="multi-select"]').each(function() {
