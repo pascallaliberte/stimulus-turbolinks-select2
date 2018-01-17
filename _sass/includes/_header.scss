@@ -1,0 +1,69 @@
+.site-header {
+  background-color: transparentize(white, 0.3);
+  .active {
+    text-decoration: none;
+    color: black;
+  }
+  
+  border-radius: rem(5px) rem(5px) 0 0;
+  
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  backdrop-filter: saturate(180%) blur(10px);
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+  color: $color-text;
+}
+
+.navbar-brand {
+  margin-left: 20px;
+  margin-right: 40px;
+}
+
+@media (max-width: 767px) {
+  .navbar-nav {
+    align-items: flex-end;
+    position: absolute;
+    left: rem(5px);
+    right: rem(5px);
+    top: rem(5px);
+    width: auto !important;
+    z-index: -1;
+  }
+  
+  .nav-item-proposals, .nav-item-clients {
+    position: fixed;
+    top: rem(45px);
+    padding-left: rem(13px);
+    padding-right: rem(13px);
+    background-color: #FBF3CA;
+    border-radius: rem(17px);
+    
+    &.active {
+      &::before {
+        position: absolute;
+        z-index: 0;
+        content: '';
+        top: rem(3px);
+        bottom: rem(3px);
+        left: rem(3px);
+        right: rem(3px);
+        background-color: transparentize($brand-primary, 0.5);
+        border-radius: rem(14px);
+      }
+    }
+  }
+  
+  .nav-item-proposals {
+    right: 50%;
+  }
+  
+  .nav-item-clients {
+    left: 50%;
+  }
+  
+  .nav-item.dropdown {
+    text-align: right;
+    padding-right: rem(10px);
+  }
+}

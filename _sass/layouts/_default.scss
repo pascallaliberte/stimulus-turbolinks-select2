@@ -1,0 +1,17 @@
+body {
+  background-color: $color-bg;
+  font-size: 20px;
+  font-family: 'basic-sans', sans-serif;
+}
+
+h1, h2, h3 {
+  color: $color-text;
+}
+
+a {
+  color: $color-link;
+  transition: color 0.2s ease;
+  &:hover, &:active {
+    color: darken($color-link, 10%);
+  }
+}

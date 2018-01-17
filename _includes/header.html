@@ -1,0 +1,20 @@
+<nav class="site-header navbar navbar-expand-sm navbar-light">
+  <a class="navbar-brand" href="{{ "/" | prepend: site.baseurl }}">Famous Teas 🤩</strong></a>
+  
+  <ul class="navbar-nav mr-auto w-100">
+    <li class="nav-item nav-item-proposals {% if page.section == "proposals" %}active{% endif %}">
+      <a class="nav-link" href="{{ "/" | prepend: site.baseurl }}">Tea Search {% if page.section == "proposals" %}<span class="sr-only">(current)</span>{% endif %}</a>
+    </li>
+    <li class="nav-item ml-auto dropdown">
+      <a class="nav-link dropdown-toggle" data-action="click->dropdown#toggle click@window->dropdown#hide" data-target="dropdown.button" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Account
+      </a>
+      <div class="dropdown-menu" data-target="dropdown.menu">
+        <a class="dropdown-item" href="#">Settings</a>
+        <a class="dropdown-item" href="#">Help</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Logout</a>
+      </div>
+    </li>
+  </ul>
+</nav>
