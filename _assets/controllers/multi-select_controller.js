@@ -25,6 +25,7 @@ export default class extends Controller {
   saveState() {
     let values = $(this.select).val()
     
+    // make sure the HTML itself has those elements selected, since the HTML is what is saved in the turbolinks snapshot
     values.forEach((val) => {
       $(this.select).find(`option[value="${val}"]`).attr('selected', 'selected');
     })

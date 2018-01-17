@@ -1715,6 +1715,7 @@ var _class = function (_Controller) {
 
       var values = $(this.select).val();
 
+      // make sure the HTML itself has those elements selected, since the HTML is what is saved in the turbolinks snapshot
       values.forEach(function (val) {
         $(_this3.select).find("option[value=\"" + val + "\"]").attr('selected', 'selected');
       });
