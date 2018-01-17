@@ -9,5 +9,11 @@
 // Turbolinks.start()
 
 $(document).ready(function() {
-    $('[data-behavior="multi-select"]').select2();
+  $('[data-behavior="multi-select"]').each(function() {
+    let placeholder = $(this).data('placeholder')
+    
+    $(this).select2({
+      placeholder: placeholder
+    });
+  })
 });
