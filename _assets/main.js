@@ -1,19 +1,9 @@
 import Turbolinks from 'turbolinks'
-// import { Application } from "stimulus"
-// import { autoload } from "stimulus/webpack-helpers"
-// 
-// const application = Application.start()
-// const controllers = require.context("./controllers", true, /\.js$/)
-// autoload(controllers, application)
-// 
-Turbolinks.start()
+import { Application } from "stimulus"
+import { autoload } from "stimulus/webpack-helpers" // changes in 1.0
 
-$(document).ready(function() {
-  $('[data-behavior="multi-select"]').each(function() {
-    let placeholder = $(this).data('placeholder')
-    
-    $(this).select2({
-      placeholder: placeholder
-    });
-  })
-});
+const application = Application.start()
+const controllers = require.context("./controllers", true, /\.js$/)
+autoload(controllers, application) // changes in 1.0
+
+Turbolinks.start()

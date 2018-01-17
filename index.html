@@ -10,11 +10,13 @@ section: search
       <h1 class="d-inline-block">{{ page.title }}</h1>
     </div>
     <div class="col-md-6">
-      <select class="ingredients-select" name="ingredients[]" data-behavior="multi-select" multiple="multiple" style="width: 100%;" data-placeholder="Ingredients…">
-        {% for ingredient in site.data.ingredients %}
-        <option value="{{ ingredient.slug }}">{{ ingredient.name }}</option>
-        {% endfor %}
-      </select>
+      <div data-controller="multi-select">
+        <select data-target="multi-select.select" class="ingredients-select" name="ingredients[]" data-behavior="multi-select" multiple="multiple" style="width: 100%;" data-placeholder="Ingredients…">
+          {% for ingredient in site.data.ingredients %}
+          <option value="{{ ingredient.slug }}">{{ ingredient.name }}</option>
+          {% endfor %}
+        </select>
+      </div>
     </div>
   </header>
   <section class="container">
