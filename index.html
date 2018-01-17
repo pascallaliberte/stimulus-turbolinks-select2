@@ -9,5 +9,25 @@ section: search
     <div class="col-auto">
       <h1 class="d-inline-block">{{ page.title }}</h1>
     </div>
+    <div class="col-md-6">
+      <select class="ingredients-select" name="ingredients[]" data-behavior="multi-select" multiple="multiple">
+        {% for ingredient in site.data.ingredients %}
+        <option value="{{ ingredient.slug }}">{{ ingredient.name }}</option>
+        {% endfor %}
+      </select>
+    </div>
   </header>
+  <section>
+    {% for tea in site.teas %}
+    <div class="row">
+      <div class="col-md-2">
+        <img class="img-fluid" src="https://www.placehold.it/400">
+      </div>
+      <div class="col-md-10">
+        <h2><a href="{{ tea.url | prepend: site.baseurl }}">{{ tea.title }}</a></h2>
+        <p>{{ tea.preview }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </section>
 </div>

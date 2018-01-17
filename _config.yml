@@ -24,6 +24,17 @@ github_username:  pascallaliberte
 
 repository: pascallaliberte/tea-search
 
+collections:
+  teas:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: teas
+    values:
+      layout: default
+
 sass:
   sass_dir: _sass
 

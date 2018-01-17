@@ -7,3 +7,7 @@
 // autoload(controllers, application)
 // 
 // Turbolinks.start()
+
+$(document).ready(function() {
+    $('[data-behavior="multi-select"]').select2();
+});
