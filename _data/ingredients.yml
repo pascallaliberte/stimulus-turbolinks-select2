@@ -1,0 +1,53 @@
+- slug: barberry
+  name: Barberry
+  
+- slug: black-tea
+  name: Black Tea
+
+- slug: black-tea-whole-leaf
+  name: Black Tea Whole Leaf
+
+- slug: blue-flower
+  name: Blue Flower
+
+- slug: cardamom
+  name: Cardamom
+
+- slug: chamomile
+  name: Chamomile
+
+- slug: cinnamon
+  name: Cinnamon
+
+- slug: clove
+  name: Clove
+
+- slug: green-tea
+  name: Green Tea
+
+- slug: green-tea
+  name: Green Tea Whole Leaf
+
+- slug: jasmine-green-tea
+  name: Jasmine Green Tea
+
+- slug: lemongrass
+  name: Lemongrass
+
+- slug: matcha-green-tea
+  name: Matcha Green Tea
+
+- slug: masala-spices
+  name: Masala Spices
+
+- slug: pomegranate-shells
+  name: Pomegranate Shells
+
+- slug: peppermint
+  name: Peppermint
+
+- slug: sencha-green-tea
+  name: Sencha Green Tea
+
+- slug: spearmint
+  name: Spearmint
