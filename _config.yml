@@ -22,7 +22,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: pascallaliberte
 github_username:  pascallaliberte
 
-repository: pascallaliberte/tea-search
+repository: pascallaliberte/stimulus-turbolinks-select2
 
 collections:
   teas:
