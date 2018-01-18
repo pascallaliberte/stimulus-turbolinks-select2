@@ -10,7 +10,7 @@ export default class extends Controller {
   }
   
   select2mount() {
-    let placeholder = $(this.select).data('placeholder')
+    const placeholder = $(this.select).data('placeholder')
     
     $(this.select).select2({
       placeholder: placeholder
