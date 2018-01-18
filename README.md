@@ -16,7 +16,7 @@ A demo showing how to make jQuery plugins (like Select2) work with Turbolinks, u
 Used as the demo in this presentation, given at the Ottawa Ruby meetup on January 17, 2018.  
 [Turn Turbolinks Back On: Stimulus Brings the Sprinkles][video]
 
-[video][https://youtu.be/UucTtozapTE]
+[video]: [https://youtu.be/UucTtozapTE]
 
 ## See also:
 
