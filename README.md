@@ -11,10 +11,12 @@ A demo showing how to make jQuery plugins (like Select2) work with Turbolinks, u
 [basecamp]: https://basecamp.com/
 [select2]: https://select2.org
 
+Currently running `stimulus@0.9.0`. Will update for `1.0` soon!
+
 ## Watch the video
 
 Used as the demo in this presentation, given at the Ottawa Ruby meetup on January 17, 2018.  
-[Turn Turbolinks Back On: Stimulus Brings the Sprinkles][video]
+[Turn Turbolinks Back On: Stimulus Brings the Sprinkles][video]. Note: the video shows off `stimulus@0.9.0` syntax, but `1.0` will look pretty similar.
 
 [video]: [https://youtu.be/UucTtozapTE]
 
