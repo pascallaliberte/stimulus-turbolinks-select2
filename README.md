@@ -11,14 +11,14 @@ A demo showing how to make jQuery plugins (like Select2) work with Turbolinks, u
 [basecamp]: https://basecamp.com/
 [select2]: https://select2.org
 
-Currently running `stimulus@0.9.0`. Will update for `1.0` soon!
-
 ## Watch the video
 
 Used as the demo in this presentation, given at the Ottawa Ruby meetup on January 17, 2018.  
-[Turn Turbolinks Back On: Stimulus Brings the Sprinkles][video]. Note: the video shows off `stimulus@0.9.0` syntax, but `1.0` will look pretty similar.
+[Turn Turbolinks Back On: Stimulus Brings the Sprinkles][video].
 
-[video]: [https://youtu.be/UucTtozapTE]
+Note: the video shows off `stimulus@0.9.0` syntax and this demo now runs `1.0`, but the difference is only in calling the target elements. `this.select` is now `this.selectTarget`, and it's no longer needed to have the `get select()` getter.
+
+[video]: https://youtu.be/UucTtozapTE
 
 ## See also:
 
