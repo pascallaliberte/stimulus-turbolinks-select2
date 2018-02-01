@@ -1,9 +1,9 @@
 import Turbolinks from 'turbolinks'
 import { Application } from "stimulus"
-import { autoload } from "stimulus/webpack-helpers" // changes in 1.0
+import { definitionsFromContext } from "stimulus/webpack-helpers"
 
 const application = Application.start()
-const controllers = require.context("./controllers", true, /\.js$/)
-autoload(controllers, application) // changes in 1.0
+const context = require.context("./controllers", true, /\.js$/)
+application.load(definitionsFromContext(context))
 
 Turbolinks.start()
